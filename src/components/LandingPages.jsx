@@ -1,61 +1,110 @@
 import React, { useState } from "react";
-import vlImg from "../assets/portfolio/work/vl-dask.jpeg"
+import focus from "../assets/portfolio/work/focus.png"
+import afago from "../assets/portfolio/work/afago.png"
+import magrass from "../assets/portfolio/work/magrass.png"
+import arImg from "../assets/portfolio/work/ar.png"
+import psico from "../assets/portfolio/work/psico.png"
+import curso from "../assets/portfolio/landingPage/curso.png"
+import livro from "../assets/portfolio/landingPage/livro.png"
+import tach from "../assets/portfolio/landingPage/tach.png"
+import marketing from "../assets/portfolio/landingPage/marketing.png"
+import consultoria from "../assets/portfolio/landingPage/consultoria.png"
+import corretora from "../assets/portfolio/landingPage/corretora.png"
 
 // Estrutura básica do card com a URL da demo
 const projects = [
   {
     id: 1,
-    title: "Projeto 1",
-    imageUrl: "https://via.placeholder.com/300",
+    title: "Template Psicóloga Comportamental",
+    imageUrl: psico,
     githubUrl: "https://github.com/seuusuario/projeto1",
-    demoUrl: "https://seusite.com/projeto1", // Novo campo para demo
-    description: "Descrição detalhada do Projeto 1.",
-    tools: ["React", "CSS", "JavaScript"],
+    demoUrl: "https://pedrovviana.github.io/website-psicologa-comportamental/", // Novo campo para demo
+    description: "Projeto de template de site para psicólogas que utilizam a metodologia de terapia cognitivo-comportamental.",
+    tools: ["Vite", "React", "Tailwind CSS", "JavaScript" ],
   },
   {
     id: 2,
-    title: "Projeto 2",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto2",
-    demoUrl: "https://seusite.com/projeto2",
-    description: "Descrição detalhada do Projeto 2.",
-    tools: ["Node.js", "Express", "MongoDB"],
+    title: "Focus Digital",
+    imageUrl: focus,
+    demoUrl: "https://lpfocusdigital.com/",
+    description: "Projeto Freelancer de uma landing page para converter leads de uma empresa de assessoria de marketing digital.",
+    tools: ["HTML", "CSS", "JavaScript", "Booststrap"],
   },
   {
     id: 3,
-    title: "Projeto 3",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto3",
-    demoUrl: "https://seusite.com/projeto3",
-    description: "Descrição detalhada do Projeto 3.",
-    tools: ["Vue", "Tailwind", "TypeScript"],
+    title: "Afago",
+    imageUrl: afago,
+    demoUrl: "https://comafago.com.br/",
+    description: "Projeto Freelancer de uma landing page para venda de produtos, para uma loja de cestas de café da manhã.",
+    tools: ["HTML", "CSS", "JavaScript", "Booststrap"],
   },
   {
     id: 4,
-    title: "Projeto 4",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto3",
-    demoUrl: "https://seusite.com/projeto3",
-    description: "Descrição detalhada do Projeto 3.",
-    tools: ["Vue", "Tailwind", "TypeScript"],
+    title: "Pica-pau Ar para Autos",
+    imageUrl: arImg,
+    demoUrl: "https://pica-pau-ar.netlify.app/",
+    description: "Projeto freelancer para uma empresa de conserto de ar-condicionado automotivo.",
+    tools: ["HTML", "CSS", "JavaScript", "Booststrap"]
   },
   {
     id: 5,
-    title: "Projeto 5",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto3",
-    demoUrl: "https://seusite.com/projeto3",
-    description: "Descrição detalhada do Projeto 3.",
-    tools: ["Vue", "Tailwind", "TypeScript"],
+    title: "Magrass Cabo Frio",
+    imageUrl: magrass,
+    demoUrl: "https://magrasscabofrio.com.br/",
+    description: "Projeto de uma landing page para o lançamento de um produto da industria do emagrecimento, a landing page foi um sucesso, obtendo mais de 100 leads em um dia.",
+    tools: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: 6,
-    title: "Projeto 6",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto3",
-    demoUrl: "https://seusite.com/projeto3",
-    description: "Descrição detalhada do Projeto 3.",
-    tools: ["Vue", "Tailwind", "TypeScript"],
+    title: "Site para venda de cursos online",
+    imageUrl: curso,
+    githubUrl: "https://github.com/PedroVViana/website-cursos-online",
+    demoUrl: "https://pedrovviana.github.io/website-cursos-online/",
+    description: "Projeto de templete para um site de venda de cursos online.",
+    tools: ["Vite", "React", "Tailwind CSS", "TypeScript" ],
+  },
+  {
+    id: 7,
+    title: "Site para venda de produtos tecnológicos",
+    imageUrl: tach,
+    githubUrl: "https://github.com/PedroVViana/tach-product",
+    demoUrl: "https://pedrovviana.github.io/tach-product/",
+    description: "Projeto de templete para um site de produtos tecnológicos.",
+    tools: ["Vite", "React", "Tailwind CSS", "TypeScript" ],
+  },
+  {
+    id: 8,
+    title: "Site de lançamento de livro",
+    imageUrl: livro,
+    githubUrl: "https://github.com/PedroVViana/book-release",
+    demoUrl: "https://pedrovviana.github.io/book-release/",
+    description: "Projeto de templete para um site de lançamento de um livro.",
+    tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 9,
+    title: "Site para empresa de marketing",
+    imageUrl: marketing,
+    githubUrl: "https://github.com/PedroVViana/marketing-landing-page",
+    demoUrl: "https://pedrovviana.github.io/marketing-landing-page/",
+    description: "Projeto de templete para um site para uma empresa de marketing.",
+    tools: ["Vite", "React", "Tailwind CSS", "TypeScript" ],
+  },
+  {
+    id: 10,
+    title: "Site para consultoria",
+    imageUrl: consultoria,
+    demoUrl: "https://template-consultoria.netlify.app/",
+    description: "Projeto de templete para um site para uma empresa de consultoria.",
+    tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 11,
+    title: "Site para corretora",
+    imageUrl: corretora,
+    demoUrl: "https://template-corretora.netlify.app/",
+    description: "Projeto de templete para um site de uma corretora de imóveis.",
+    tools: ["HTML", "CSS", "JavaScript"],
   },
 ];
 

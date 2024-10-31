@@ -12,6 +12,8 @@ import {
 import { MdAnimation } from "react-icons/md";
 import { AiOutlineLaptop, AiOutlineMenu } from "react-icons/ai";
 import { AiFillPhone } from "react-icons/ai";
+import { FiFileText } from 'react-icons/fi';
+
 
 const Sidebar = ({ setActiveComponent, toggleSidebar, isMinimized, activeComponent }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -85,7 +87,7 @@ const Sidebar = ({ setActiveComponent, toggleSidebar, isMinimized, activeCompone
           {/* New "Currículo" link */}
           <li className="py-2 cursor-pointer px-4 hover:bg-bgbluer rounded flex items-center relative">
             <div className="text-xl w-8 flex-shrink-0">
-              <FaLaptopCode />
+              <FiFileText />
             </div>
             {!isMinimized && (
               <a

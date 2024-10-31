@@ -11,8 +11,7 @@ const projects = [
     id: 1,
     title: "VL Imports",
     imageUrl: vlImg,
-    githubUrl: "https://github.com/seuusuario/projeto1",
-    demoUrl: "https://seusite.com/projeto1", // Novo campo para demo
+    demoUrl: "https://vanlumeimports.netlify.app/", // Novo campo para demo
     description: "Projeto Freelancer de um catalogo web para uma loja virtual de vendas de camisa de time.",
     tools: ["HTML", "CSS", "JavaScript"],
   },
@@ -20,7 +19,7 @@ const projects = [
     id: 2,
     title: "Focus Digital",
     imageUrl: focus,
-    demoUrl: "https://seusite.com/projeto2",
+    demoUrl: "https://lpfocusdigital.com/",
     description: "Projeto Freelancer de uma landing page para converter leads de uma empresa de assessoria de marketing digital.",
     tools: ["HTML", "CSS", "JavaScript", "Booststrap"],
   },
@@ -28,7 +27,7 @@ const projects = [
     id: 3,
     title: "Afago",
     imageUrl: afago,
-    demoUrl: "https://seusite.com/projeto3",
+    demoUrl: "https://comafago.com.br/",
     description: "Projeto Freelancer de uma landing page para venda de produtos, para uma loja de cestas de café da manhã.",
     tools: ["HTML", "CSS", "JavaScript", "Booststrap"],
   },
@@ -36,7 +35,7 @@ const projects = [
     id: 4,
     title: "Pica-pau Ar para Autos",
     imageUrl: arImg,
-    demoUrl: "https://seusite.com/projeto3",
+    demoUrl: "https://pica-pau-ar.netlify.app/",
     description: "Projeto freelancer para uma empresa de conserto de ar-condicionado automotivo.",
     tools: ["HTML", "CSS", "JavaScript", "Booststrap"]
   },
@@ -44,8 +43,8 @@ const projects = [
     id: 5,
     title: "Magrass Cabo Frio",
     imageUrl: magrass,
-    demoUrl: "https://seusite.com/projeto3",
-    description: "Projeto de uma landing page para o lançamento de um produto da industria do emagrecimento, a landing page foi um sucesso, obtendo mais de 100 leads em um dia",
+    demoUrl: "https://magrasscabofrio.com.br/",
+    description: "Projeto de uma landing page para o lançamento de um produto da industria do emagrecimento, a landing page foi um sucesso, obtendo mais de 100 leads em um dia.",
     tools: ["HTML", "CSS", "JavaScript"],
   },
 ];
@@ -80,14 +79,6 @@ const Trabalhos = () => {
             <div className="p-4 flex flex-col justify-center items-center flex-grow">
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <div className="flex justify-center mt-2 gap-2">
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-black text-white text-sm px-3 py-2 rounded-md hover:bg-gray-900 transition-colors"
-                >
-                GitHub
-                </a>
                 <a
                   href={project.demoUrl}
                   target="_blank"
@@ -131,14 +122,6 @@ const Trabalhos = () => {
               ))}
             </ul>
             <div className="flex justify-center gap-4">
-              <a
-                href={selectedProject.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors"
-              >
-                GitHub
-              </a>
               <a
                 href={selectedProject.demoUrl}
                 target="_blank"
