@@ -1,61 +1,150 @@
 import React, { useState } from "react";
-import vlImg from "../assets/portfolio/work/vl-dask.jpeg"
+import IMG1 from "../assets/portfolio/sistemas/1.png"
+import IMG2 from "../assets/portfolio/sistemas/2.png"
+import IMG3 from "../assets/portfolio/sistemas/3.png"
+import IMG4 from "../assets/portfolio/sistemas/4.png"
+import IMG5 from "../assets/portfolio/sistemas/5.png"
+import IMG6 from "../assets/portfolio/sistemas/6.png"
+import IMG7 from "../assets/portfolio/sistemas/7.png"
+import IMG8 from "../assets/portfolio/sistemas/8.png"
+import IMG9 from "../assets/portfolio/sistemas/9.png"
+import IMG10 from "../assets/portfolio/sistemas/10.png"
+import IMG11 from "../assets/portfolio/sistemas/11.png"
+import IMG12 from "../assets/portfolio/sistemas/12.png"
+import IMG13 from "../assets/portfolio/sistemas/13.png"
+import IMG14 from "../assets/portfolio/sistemas/14.png"
+import IMG15 from "../assets/portfolio/sistemas/15.png"
 
 // Estrutura básica do card com a URL da demo
 const projects = [
   {
     id: 1,
-    title: "Projeto 1",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto1",
-    demoUrl: "https://seusite.com/projeto1", // Novo campo para demo
-    description: "Descrição detalhada do Projeto 1.",
+    title: "Sistema Login Cadastro",
+    imageUrl: IMG1,
+    githubUrl: "https://github.com/PedroVViana/Sistema-Login-Cadastro/tree/main",
+    demoUrl: "https://system-register-devlume.netlify.app/", // Novo campo para demo
+    description: "Projeto de um sistema de login e cadastro com autenticação de usuario.",
     tools: ["React", "CSS", "JavaScript"],
   },
   {
     id: 2,
-    title: "Projeto 2",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto2",
-    demoUrl: "https://seusite.com/projeto2",
-    description: "Descrição detalhada do Projeto 2.",
-    tools: ["Node.js", "Express", "MongoDB"],
+    title: "Sistema de biblioteca",
+    imageUrl: IMG2,
+    githubUrl: "https://github.com/PedroVViana/System-Library-Java-back",
+    description: "Projeto back-end de sistema de biblioteca em Java",
+    tools: ["Java", "SQL"],
   },
   {
     id: 3,
-    title: "Projeto 3",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto3",
-    demoUrl: "https://seusite.com/projeto3",
-    description: "Descrição detalhada do Projeto 3.",
-    tools: ["Vue", "Tailwind", "TypeScript"],
+    title: "Calculadora de Operacoes Basicas e Avancadas",
+    imageUrl: IMG3,
+    githubUrl: "https://github.com/PedroVViana/Calculadora-de-Operacoes-Basicas-e-Avancadas-Back",
+    description: "Projeto back-end em Java de uma Calculadora de Operacoes Basicas e Avancadas.",
+    tools: ["Java"],
   },
   {
     id: 4,
-    title: "Projeto 4",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto3",
-    demoUrl: "https://seusite.com/projeto3",
-    description: "Descrição detalhada do Projeto 3.",
-    tools: ["Vue", "Tailwind", "TypeScript"],
+    title: "Conversor Medidas",
+    imageUrl: IMG4,
+    githubUrl: "https://github.com/PedroVViana/Conversor-Medidas-Back",
+    description: "Projeto back-end em Java de um conversor de medidas.",
+    tools: ["Java"],
   },
   {
     id: 5,
-    title: "Projeto 5",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto3",
-    demoUrl: "https://seusite.com/projeto3",
-    description: "Descrição detalhada do Projeto 3.",
-    tools: ["Vue", "Tailwind", "TypeScript"],
+    title: "Gerenciador de Inventário",
+    imageUrl: IMG5,
+    githubUrl: "https://github.com/PedroVViana/Inventory-manager",
+    demoUrl: "https://fantastic-pavlova-6430ae.netlify.app/",
+    description: "projeto de sistema de gerenciador de inventário.",
+    tools: ["React", "Tailwind", "Vite","Javascript","localstage"],
   },
   {
     id: 6,
-    title: "Projeto 6",
-    imageUrl: "https://via.placeholder.com/300",
-    githubUrl: "https://github.com/seuusuario/projeto3",
-    demoUrl: "https://seusite.com/projeto3",
-    description: "Descrição detalhada do Projeto 3.",
-    tools: ["Vue", "Tailwind", "TypeScript"],
+    title: "Chat em Tempo real",
+    imageUrl: IMG6,
+    githubUrl: "https://github.com/PedroVViana/Real-Time-Chat",
+    description: "Projeto web fullstack de um chat em tempo real, com servidor em Node.js e Express e front em React.js.",
+    tools: ["React", "CSS", "Vite","Javascript","Node.js","Express","Socket.io"],
+  },
+  {
+    id: 7,
+    title: "Bot cobrancas whatsapp",
+    imageUrl: IMG7,
+    githubUrl: "https://github.com/PedroVViana/Bot-cobrancas-whatsapp",
+    description: "Projeto pessoal desenvolvido em Python que consiste na criação de um bot para mandar mensagens automáticas e personalizadas para números dentro de uma planilha Excel. O código analisa os dados da tabela e com base neles manda uma mensagem de cobrança para cada nome da tabela.",
+    tools: ["Python", "Pyautogui","Webbrowser","os"],
+  },
+  {
+    id: 8,
+    title: "Pomodoro Timer",
+    imageUrl: IMG8,
+    githubUrl: "https://github.com/PedroVViana/Pomodoro-Timer",
+    demoUrl: "https://dev-timepomodoro.netlify.app/",
+    description: "Projeto de um timer para tecnica de concentração chamada Pomodoro.",
+    tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 9,
+    title: "Bloco de notas",
+    imageUrl: IMG9,
+    githubUrl: "https://github.com/PedroVViana/Stickv-Notes",
+    demoUrl: "https://relaxed-jelly-660ebc.netlify.app/",
+    description: "Projeto de um bloco de notas.",
+    tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 10,
+    title: "Pokedex",
+    imageUrl: IMG10,
+    githubUrl: "https://github.com/PedroVViana/Pokedex",
+    demoUrl: "https://pokedexprojectpedro.netlify.app/",
+    description: "Projeto de consumo de API do pokemon.",
+    tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 11,
+    title: "Lista de Tarefas",
+    imageUrl: IMG11,
+    githubUrl: "https://github.com/PedroVViana/TO-DO-APP",
+    description: "Projeto de uma lista de tarefas.",
+    tools: ["React", "CSS", "JavaScript"],
+  },
+  {
+    id: 12,
+    title: "Editor de imagem",
+    imageUrl: IMG12,
+    githubUrl: "https://github.com/PedroVViana/Project-EditPhotos",
+    demoUrl: "https://edit-photos-pedro.netlify.app/",
+    description: "Projeto de uma lista de tarefas.",
+    tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 13,
+    title: "Jogo de carro 3D",
+    imageUrl: IMG13,
+    githubUrl: "https://github.com/PedroVViana/Jogo-de-carro-3D/tree/main/Dash.github.io-main",
+    demoUrl: "https://game-cart-3d.netlify.app/",
+    description: "Jogo de carro em 3D.",
+    tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 14,
+    title: "Jogo da cobrinha",
+    imageUrl: IMG14,
+    githubUrl: "https://github.com/PedroVViana/Recriando_o_Snake_Game",
+    demoUrl: "https://snakegamer1001.netlify.app/",
+    description: "Famoso jogo de celular da cobra que aumenta de tamanho.",
+    tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 15,
+    title: "Clone da página inicial do instagram",
+    imageUrl: IMG15,
+    githubUrl: "https://github.com/PedroVViana/Recriando-pagina-incial-do-Instagram",
+    demoUrl: "https://clonepageinsta.netlify.app/",
+    description: "Clone da página inicial do instagram.",
+    tools: ["HTML", "CSS", "JavaScript"],
   },
 ];
 

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import {
   FaChevronLeft,
   FaLaptopCode,
-  FaPalette,
   FaCog,
   FaInstagram,
   FaLinkedin,
   FaWhatsapp,
   FaYoutube,
+  FaTiktok,
 } from "react-icons/fa";
 import { MdAnimation } from "react-icons/md";
 import { AiOutlineLaptop, AiOutlineMenu } from "react-icons/ai";
@@ -69,7 +69,6 @@ const Sidebar = ({ setActiveComponent, toggleSidebar, isMinimized, activeCompone
           {[
             { icon: <FaLaptopCode />, label: "Freelances" },
             { icon: <AiOutlineLaptop />, label: "Landing Pages" },
-            { icon: <FaPalette />, label: "Templates" },
             { icon: <MdAnimation />, label: "Animações" },
             { icon: <FaCog />, label: "Sistemas" },
           ].map(({ icon, label }, index) => (
@@ -102,7 +101,7 @@ const Sidebar = ({ setActiveComponent, toggleSidebar, isMinimized, activeCompone
 
         <div className="border-t border-gray-600 my-4"></div>
 
-        {/* Social Links */}
+       {/* Social Links */}
         <div className="mt-auto">
           {isMinimized ? (
             <div className="relative">
@@ -115,13 +114,20 @@ const Sidebar = ({ setActiveComponent, toggleSidebar, isMinimized, activeCompone
               {isSocialOpen && (
                 <div className="absolute top-14 left-0 bg-bgbluer p-2 rounded-md shadow-lg space-y-2">
                   {[
-                    { icon: <FaYoutube />, label: "Youtube" },
-                    { icon: <FaWhatsapp />, label: "Whatsapp" },
-                    { icon: <FaInstagram />, label: "Instagram" },
-                    { icon: <FaLinkedin />, label: "LinkedIn" },
-                  ].map(({ icon, label }, index) => (
-                    <div key={index} className="group relative flex justify-center">
-                      <button className="text-white text-lg p-2">{icon}</button>
+                    { icon: <FaTiktok/>, label: "Tiktok", link: "https://www.tiktok.com/@devlume__" },
+                    { icon: <FaWhatsapp />, label: "Whatsapp", link: "https://web.whatsapp.com/send?phone=5581994952030" },
+                    { icon: <FaInstagram />, label: "Instagram", link: "https://www.instagram.com/devlume__/" },
+                    { icon: <FaLinkedin />, label: "LinkedIn", link: "https://www.linkedin.com/in/pedro-vanlume-0230551b9/" },
+                  ].map(({ icon, label, link }, index) => (
+                    <div key={index} className="group relative flex justify-center gap-4">
+                      <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white text-lg p-2"
+                      >
+                        {icon}
+                      </a>
                       <span className="absolute left-10 bg-gray-700 text-white p-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
                         {label}
                       </span>
@@ -133,13 +139,20 @@ const Sidebar = ({ setActiveComponent, toggleSidebar, isMinimized, activeCompone
           ) : (
             <div className="flex justify-center gap-3 items-center">
               {[
-                { icon: <FaYoutube />, label: "Youtube" },
-                { icon: <FaWhatsapp />, label: "Whatsapp" },
-                { icon: <FaInstagram />, label: "Instagram" },
-                { icon: <FaLinkedin />, label: "LinkedIn" },
-              ].map(({ icon, label }, index) => (
-                <div key={index} className="group relative">
-                  <button className="text-white text-lg p-2">{icon}</button>
+                { icon: <FaTiktok/>, label: "Tiktok", link: "https://www.tiktok.com/@devlume__" },
+                { icon: <FaWhatsapp />, label: "Whatsapp", link: "https://web.whatsapp.com/send?phone=5581994952030" },
+                { icon: <FaInstagram />, label: "Instagram", link: "https://www.instagram.com/devlume__/" },
+                { icon: <FaLinkedin />, label: "LinkedIn", link: "https://www.linkedin.com/in/pedro-vanlume-0230551b9/" },
+              ].map(({ icon, label, link }, index) => (
+                <div key={index} className="group flex justify-center relative">
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-lg p-2"
+                  >
+                    {icon}
+                  </a>
                   <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white p-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
                     {label}
                   </span>
@@ -148,6 +161,7 @@ const Sidebar = ({ setActiveComponent, toggleSidebar, isMinimized, activeCompone
             </div>
           )}
         </div>
+
       </div>
 
       {/* Sidebar Overlay */}
