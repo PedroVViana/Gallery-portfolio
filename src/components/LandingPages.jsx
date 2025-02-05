@@ -10,6 +10,7 @@ import tach from "../assets/portfolio/landingPage/tach.png"
 import marketing from "../assets/portfolio/landingPage/marketing.png"
 import consultoria from "../assets/portfolio/landingPage/consultoria.png"
 import corretora from "../assets/portfolio/landingPage/corretora.png"
+import personal from "../assets/portfolio/landingPage/personal.png"
 
 // Estrutura básica do card com a URL da demo
 const projects = [
@@ -105,6 +106,14 @@ const projects = [
     demoUrl: "https://template-corretora.netlify.app/",
     description: "Projeto de templete para um site de uma corretora de imóveis.",
     tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 12,
+    title: "Site para Personal Trainer",
+    imageUrl: personal,
+    demoUrl: "https://template-corretora.netlify.app/",
+    description: "Projeto de templete para um site de personal trainer.",
+    tools: ["Vite", "React", "CSS", "JavaScript"],
   },
 ];
 

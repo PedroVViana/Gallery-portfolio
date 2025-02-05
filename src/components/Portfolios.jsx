@@ -57,6 +57,7 @@ const projects = [
     description: "Descrição detalhada do Projeto 3.",
     tools: ["Vue", "Tailwind", "TypeScript"],
   },
+  
 ];
 
 const Portfolios = () => {
