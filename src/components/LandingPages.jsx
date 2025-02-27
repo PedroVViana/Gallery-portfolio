@@ -111,7 +111,7 @@ const projects = [
     id: 12,
     title: "Site para Personal Trainer",
     imageUrl: personal,
-    demoUrl: "https://template-corretora.netlify.app/",
+    demoUrl: "https://pedrovviana.github.io/Personal-Template/",
     description: "Projeto de templete para um site de personal trainer.",
     tools: ["Vite", "React", "CSS", "JavaScript"],
   },
