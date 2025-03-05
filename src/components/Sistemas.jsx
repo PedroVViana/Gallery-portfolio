@@ -14,6 +14,7 @@ import IMG12 from "../assets/portfolio/sistemas/12.png"
 import IMG13 from "../assets/portfolio/sistemas/13.png"
 import IMG14 from "../assets/portfolio/sistemas/14.png"
 import IMG15 from "../assets/portfolio/sistemas/15.png"
+import IMG16 from "../assets/portfolio/sistemas/16.png"
 
 // Estrutura básica do card com a URL da demo
 const projects = [
@@ -145,6 +146,15 @@ const projects = [
     demoUrl: "https://clonepageinsta.netlify.app/",
     description: "Clone da página inicial do instagram.",
     tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 16,
+    title: "Gerenciador de tarefas Kanban",
+    imageUrl: IMG16,
+    githubUrl: "https://github.com/PedroVViana/Recriando-pagina-incial-do-Instagram",
+    demoUrl: "https://clonepageinsta.netlify.app/",
+    description: "Este é um sistema de gerenciamento de tarefas baseado em Kanban, desenvolvido com React, TypeScript e TailwindCSS. O projeto oferece uma interface intuitiva para organizar tarefas em três estados: A Fazer, Em Progresso e Concluídas.",
+    tools: ["Vite", "React", "TypeScript","TailwindCSS","Zustand"],
   },
 ];
 

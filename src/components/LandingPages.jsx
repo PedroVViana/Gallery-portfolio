@@ -11,6 +11,9 @@ import marketing from "../assets/portfolio/landingPage/marketing.png"
 import consultoria from "../assets/portfolio/landingPage/consultoria.png"
 import corretora from "../assets/portfolio/landingPage/corretora.png"
 import personal from "../assets/portfolio/landingPage/personal.png"
+import PsicoAna from "../assets/portfolio/landingPage/PsicoAna.png"
+import vendasApp from "../assets/portfolio/landingPage/vendasApp.png"
+
 
 // Estrutura básica do card com a URL da demo
 const projects = [
@@ -114,6 +117,24 @@ const projects = [
     demoUrl: "https://pedrovviana.github.io/Personal-Template/",
     description: "Projeto de templete para um site de personal trainer.",
     tools: ["Vite", "React", "CSS", "JavaScript"],
+  },
+  {
+    id: 13,
+    title: "Site para Psicologa feita com IA",
+    imageUrl: PsicoAna,
+    githubUrl: "https://github.com/PedroVViana/tach-product",
+    demoUrl: "https://aquamarine-starlight-89cb23.netlify.app/",
+    description: "Projeto de templete para um site de Psicologa feita com IA.",
+    tools: ["Vite", "React", "Tailwind CSS", "TypeScript"],
+  },
+  {
+    id: 14,
+    title: "Site para vendas de apps",
+    imageUrl: vendasApp,
+    githubUrl: "https://github.com/PedroVViana/Template-venda-de-Aplicativo",
+    demoUrl: "https://pedrovviana.github.io/Template-venda-de-Aplicativo//",
+    description: "Projeto de templete para vendas de apps.",
+    tools: ["Vite", "React", "Tailwind CSS", "TypeScript"],
   },
 ];
 
