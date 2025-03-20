@@ -15,6 +15,7 @@ import IMG13 from "../assets/portfolio/sistemas/13.png"
 import IMG14 from "../assets/portfolio/sistemas/14.png"
 import IMG15 from "../assets/portfolio/sistemas/15.png"
 import IMG16 from "../assets/portfolio/sistemas/16.png"
+import IMG17 from "../assets/portfolio/sistemas/17.png"
 
 // Estrutura básica do card com a URL da demo
 const projects = [
@@ -155,6 +156,14 @@ const projects = [
     demoUrl: "https://gerenciador-kanban.netlify.app/",
     description: "Este é um sistema de gerenciamento de tarefas baseado em Kanban, desenvolvido com React, TypeScript e TailwindCSS. O projeto oferece uma interface intuitiva para organizar tarefas em três estados: A Fazer, Em Progresso e Concluídas.",
     tools: ["Vite", "React", "TypeScript","TailwindCSS","Zustand"],
+  },
+  {
+    id: 17,
+    title: "HabitWave",
+    imageUrl: IMG17,
+    demoUrl: "https://habitwave.com.br/",
+    description: "O HabitWave é um app web para desenvolver hábitos, gerenciar tarefas e melhorar a produtividade. Com uma interface intuitiva, permite acompanhar seu progresso, visualizar um calendário dinâmico e personalizar lembretes.",
+    tools: ['React.js', 'TypeScript', 'TailwindCSS', 'Shadcn/UI', 'Firebase Authentication', 'Firestore', 'Firebase Hosting'],
   },
 ];
 
