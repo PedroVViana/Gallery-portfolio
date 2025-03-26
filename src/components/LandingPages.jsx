@@ -13,6 +13,8 @@ import corretora from "../assets/portfolio/landingPage/corretora.png"
 import personal from "../assets/portfolio/landingPage/personal.png"
 import PsicoAna from "../assets/portfolio/landingPage/PsicoAna.png"
 import vendasApp from "../assets/portfolio/landingPage/vendasApp.png"
+import Webnar from "../assets/portfolio/landingPage/Webnar.png"
+import nike from "../assets/portfolio/landingPage/nike.png"
 
 
 // Estrutura básica do card com a URL da demo
@@ -134,6 +136,24 @@ const projects = [
     githubUrl: "https://github.com/PedroVViana/Template-venda-de-Aplicativo",
     demoUrl: "https://pedrovviana.github.io/Template-venda-de-Aplicativo//",
     description: "Projeto de templete para vendas de apps.",
+    tools: ["Vite", "React", "Tailwind CSS", "TypeScript"],
+  },
+  {
+    id: 15,
+    title: "Site para eventos online",
+    imageUrl: Webnar,
+    githubUrl: "https://github.com/PedroVViana/Webnar-Page-Template",
+    demoUrl: "https://webnar-transformcao-da-era-ia.netlify.app/",
+    description: "Projeto de templete para venda de um evento online de palestras.",
+    tools: ["Vite", "React", "Tailwind CSS", "TypeScript", 'Gsap'],
+  },
+  {
+    id: 16,
+    title: "Landing Page Nike Air Jordan 1",
+    imageUrl: nike,
+    githubUrl: "https://github.com/PedroVViana/LP-Air-Jordan-1",
+    demoUrl: "https://template-air-jordan-1.vercel.app/",
+    description: "Projeto de templete de uma landing page para a Nike Air Jordan 1, linha de produtos da Nike.",
     tools: ["Vite", "React", "Tailwind CSS", "TypeScript"],
   },
 ];
